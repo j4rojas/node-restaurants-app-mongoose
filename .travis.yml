@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: nAVWFVS9s0gSoSCu5fPEdbjvvbbKoIrGIHCcpgcpBiisVzuyfvPisELpd4UbqDPJLjRNn0rc40IJAQ42cZwIosOP0rHKmRVmfiU+zDxSMiK6LcPIa/dv8hIiMhhfSWwlnFzVNs+BTX8alZtXMVP4sIo71bZ1g58nDjj+/sKzNh32pPSbWXYxRfzXgOvl+6rIHaARtkFVhF3vNhtym9kt1AvVWgDAUb4HEFtW0tlUdSr9v2qBsvdiQGW975IafIxbQw6KiGFJYx3wYFGxtX1HiaPEM1ozSKDwUasGXJ08QfnxOrLAjxk7Jo0Pauu2wXUvMuihWuwoG99T7prc4pQ2r6+qfE7/F1k8cMgz7RaCf9kil+NwxvDUJxG72AKNZcE1Nq/aQ5BmyNl8NG6v+lx8lNFYTargxivrGf+T/cDW2WKoN9rInGgavvV2ZpEs7qm4xATeK9GX3DAEnY8n0c40HjhCuZyy/Brwz2HCNq5eprl0JPPK/ZoGtkdbx/Jb0zyuGBJc16Sc4WxyQj2hJPBz5HQtSx//bYbSMJJhR5mUOWy4o2d1JQAwLbBjmel+VBvlc5JaJWHGZ4lQXHlcfKyLbtJopUthMFvZNHoI57h0kINvtC6T1WsaHvQVrdy8a5scJ1iKKkCXNQjnmYNIoQyKP3LMX351OFayOrsbHqGgUm0=
+  app: https://mysterious-escarpment-37897.herokuapp.com/
+  on:
+    repo: j4rojas/node-restaurants-app-mongoose
+    branch: feature/with-tests
